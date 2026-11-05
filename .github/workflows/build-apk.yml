@@ -1,3 +1,4 @@
+
 name: Build Sasha Chat APK
 
 on:
@@ -38,6 +39,8 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: ''
 
       - name: Install SDK platform 35 and build tools
         run: |
